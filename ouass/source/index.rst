@@ -32,7 +32,7 @@ Getting Started
 *************************
     Clone the repository into your catkin workspace:
 
-    git clone https://github.com/OuassimMilous/RT2-1
+    git clone https://github.com/OuassimMilous/RT2-1-Documentation
 
 Build the workspace:
 *************************
