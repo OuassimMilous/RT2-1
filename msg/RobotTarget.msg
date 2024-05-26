@@ -1,3 +1,4 @@
-# Robot's new target position
-float64 x
-float64 ymv 
+# RobotTarget.msg
+float64 target_x
+float64 target_y
+

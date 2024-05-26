@@ -60,12 +60,12 @@ add_message_files(
     RobotTarget.msg
 )
 
-## Generate services in the 'srv' folder
-# add_service_files(
-#   FILES
-#   Service1.srv
-#   Service2.srv
-# )
+# Generate services in the 'srv' folder
+add_service_files(
+  FILES
+  LastTarget.srv
+  TargetDistance.srv
+)
 
 ## Generate actions in the 'action' folder
  add_action_files(
@@ -168,8 +168,14 @@ include_directories(
 ## Mark executable scripts (Python etc.) for installation
 ## in contrast to setup.py, you can choose the destination
 catkin_install_python(PROGRAMS
+
+  scripts/bug_as.py
+  scripts/wall_follow_service.py
+  scripts/go_to_point_service.py
   scripts/nodeA.py
   scripts/nodeB.py
+  scripts/nodeC.py
+
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
